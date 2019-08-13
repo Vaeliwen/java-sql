@@ -145,16 +145,16 @@ ORDER BY customers.city ASC
 Note: This step does not use PostgreSQL!
 
 Take the following data and normalize it into a 3NF database.
+                                                                     | Pet Name   | Pet Type | Owner ID | Pet ID |
+| Owner       | Owner ID   | Fenced Yard | City Dweller |            |------------|----------|----------|--------|
+|-------------|------------|-------------|--------------|            | Ellie      | Dog      | 1        | 1      |
+| Jane        | 1          | No          | Yes          |            | Tiger      | Cat      | 1        | 2      |
+| Bob         | 2          | No          | No           |            | Toby       | Turtle   | 1        | 3      |
+| Sam         | 3          | Yes         | No           |            | Joe        | Horse    | 2        | 4      |
+                                                                     | Ginger     | Dog      | 3        | 5      |
+                                                                     | Miss Kitty | Cat      | 3        | 6      |
+                                                                     | Bubble     | Fish     | 3        | 7      |
 
-| Owner       | Pet Name   | Pet Type | Fenced Yard | City Dweller |
-|-------------|------------|----------|-------------|--------------|
-| Jane        | Ellie      | Dog      | No          | Yes          |
-| Jane        | Tiger      | Cat      | No          | Yes          |
-| Jane        | Toby       | Turtle   | No          | Yes          |
-| Bob         | Joe        | Horse    | No          | No           |
-| Sam         | Ginger     | Dog      | Yes         | No           |
-| Sam         | Miss Kitty | Cat      | Yes         | No           |
-| Sam         | Bubble     | Fish     | Yes         | No           |
 ---
 ## Stretch Goals
 
